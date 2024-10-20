@@ -9,7 +9,9 @@
                 "-g",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "-I/usr/include/paho-mqtt",  // Add this line
+                "-lpaho-mqtt3c"
             ],
             "options": {
                 "cwd": "${fileDirname}"
